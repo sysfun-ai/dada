@@ -9,7 +9,12 @@ import (
 var rootCmd = &cobra.Command{
 	Use:   "dada",
 	Short: "Dada is a react project generator",
-	Long: `Dada
+	CompletionOptions: cobra.CompletionOptions{
+		DisableDefaultCmd:   true,
+		DisableNoDescFlag:   true,
+		DisableDescriptions: true,
+	},
+	Long: `Dada 🐶
 
 A modern react project generator, with optimized webpack5 configuration.
 Complete documentation is available at https://dada.sysfun.com`,

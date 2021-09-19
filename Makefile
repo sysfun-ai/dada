@@ -2,7 +2,7 @@ GO_PACKAGE_PATH := github.com/sysfun-ai/dada
 GIT_TAG := $(shell git describe)
 GIT_HEAD := $(shell git rev-parse --short HEAD)
 BUILD_LDFLAGS := "-X $(GO_PACKAGE_PATH)/app.Version=$(GIT_TAG) -X $(GO_PACKAGE_PATH)/app.GitRev=$(GIT_HEAD)"
-SOURCE_DIR := ./cmd/dada
+SOURCE_DIR := .
 BUILD_DIR := ./build
 BUILD_APP := dada
 OUTPUT := $(BUILD_DIR)/$(BUILD_APP)
