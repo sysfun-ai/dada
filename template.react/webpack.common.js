@@ -9,9 +9,6 @@ const dev = process.env.NODE_ENV !== 'production'
 
 module.exports = {
   entry: paths.appSrc,
-  experiments: {
-    asset: true,
-  },
   output: {
     path: paths.appBuild,
     publicPath: '/',
