@@ -13,6 +13,5 @@ root.render(
                 <App />
             </Router>
         </HelmetProvider>
-        ,
     </StrictMode>
 )
