@@ -2,7 +2,7 @@ const { merge } = require('webpack-merge')
 const TerserWebpackPlugin = require('terser-webpack-plugin')
 const CompressionWebpackPlugin = require('compression-webpack-plugin')
 // const { BundleAnalyzerPlugin } = require('webpack-bundle-analyzer')
-const common = require('./webpack.common.js')
+const common = require('./webpack.base.conf.js')
 
 module.exports = merge(common, {
   mode: 'production',

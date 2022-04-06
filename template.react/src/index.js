@@ -7,11 +7,11 @@ import App from './App'
 const rootElement = document.getElementById('root')
 const root = ReactDOM.createRoot(rootElement)
 root.render(
-    <StrictMode>
-        <HelmetProvider>
-            <Router>
-                <App />
-            </Router>
-        </HelmetProvider>
-    </StrictMode>
+  <StrictMode>
+    <HelmetProvider>
+      <Router>
+        <App />
+      </Router>
+    </HelmetProvider>
+  </StrictMode>
 )

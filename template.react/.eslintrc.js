@@ -23,6 +23,7 @@ module.exports = {
   },
   plugins: ['react', 'react-hooks'],
   rules: {
+    // js
     indent: 0,
     'arrow-body-style': 0,
     'no-plusplus': 0, // 不使用++
@@ -52,9 +53,11 @@ module.exports = {
     'nonblock-statement-body-position': 0,
     'generator-star-spacing': 0, // 在*后不需要加空格，随prettier样式
     'max-len': 0, // 每行最多155个字符
+    'class-methods-use-this': 0,
     camelcase: 0, // 变量必须使用驼峰
     semi: [2, 'never'],
-
+    // react
+    'react/function-component-definition': 0, // 允许匿名函数作为组件
     'react/jsx-wrap-multilines': 0, // 允许{}中不加()
     'react-hooks/rules-of-hooks': 'error', // 检查 Hook 的规则
     'react-hooks/exhaustive-deps': 'warn', // 检查 effect 的依赖

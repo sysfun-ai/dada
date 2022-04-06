@@ -3,7 +3,7 @@ import { styled } from '@linaria/react'
 
 // Loading 加载中
 export const Loading = () => {
-    return <Page>Loading...</Page>
+  return <Page>Loading...</Page>
 }
 
 const Page = styled.div`

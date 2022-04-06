@@ -9,18 +9,18 @@ const Index = lazy(() => import('@/pages'))
 
 // App 入口
 export default () => {
-    const ua = new UA(window.navigator.userAgent)
-    if (ua.device.type === 'mobile') setMobile()
-    return (
-        <>
-            <Helmet>
-                <title>dada app</title>
-            </Helmet>
-            <Suspense fallback={<Loading />}>
-                <Routes>
-                    <Route path="*" element={<Index />} />
-                </Routes>
-            </Suspense>
-        </>
-    )
+  const ua = new UA(window.navigator.userAgent)
+  if (ua.device.type === 'mobile') setMobile()
+  return (
+    <>
+      <Helmet>
+        <title>dada app</title>
+      </Helmet>
+      <Suspense fallback={<Loading />}>
+        <Routes>
+          <Route path="*" element={<Index />} />
+        </Routes>
+      </Suspense>
+    </>
+  )
 }
